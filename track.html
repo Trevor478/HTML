@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Track Tag </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &lttrack&gt </h2> 
+	</div>
+<!-- default attribute -->	
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+			
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> default </td>
+							<td style="font-size:25px; background-color:gray"> 	Specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;video width="320" height="240" controls&gt;
+			&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+			&lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+			<mark>&lt;track src="subtitles_en.vtt" kind="subtitles"</mark>
+			<mark>srclang="en" label"=English" <b>default</b>&gt;</mark>
+			&lt;track src="subtitles_no.vtt" kind="subtitles"
+			srclang="no" label"=Norwegian"&gt;
+			&lt;/video&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- kind attribute -->	
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+			
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> kind </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the kind of text track. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;video width="320" height="240" controls&gt;
+			&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+			&lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+			<mark>&lt;track src="subtitles_en.vtt" <b>kind="subtitles"</b></mark>
+			<mark>srclang="en" label"=English" default&gt;</mark>
+			<mark>&lt;track src="subtitles_no.vtt" <b>kind="subtitles"</b></mark>
+			<mark>srclang="no" label"=Norwegian"&gt;</mark>
+			&lt;/video&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- label attribute -->	
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+			
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> label </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the title of the text track. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;video width="320" height="240" controls&gt;
+			&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+			&lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+			<mark>&lt;track src="subtitles_en.vtt" kind="subtitles"</mark>
+			<mark>srclang="en" <b>label"=English"</b> default&gt;</mark>
+			<mark>&lt;track src="subtitles_no.vtt" kind="subtitles"</mark>
+			<mark>srclang="no" <b>label"=Norwegian"</b>&gt;</mark>
+			&lt;/video&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- src attribute -->	
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+			
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> src </td>
+							<td style="font-size:25px; background-color:gray"> Required. Specifies the URL of the track file. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;video width="320" height="240" controls&gt;
+			<mark>&lt;source <b>src="forrest_gump.mp4"</b> type="video/mp4"&gt;</mark>
+			<mark>&lt;source <b>src="forrest_gump.ogg"</b> type="video/ogg"&gt;</mark>
+			<mark>&lt;track <b>src="subtitles_en.vtt"</b> kind="subtitles"</mark>
+			<mark>srclang="en" label"=English" default&gt;</mark>
+			<mark>&lt;track <b>src="subtitles_no.vtt"</b> kind="subtitles"</mark>
+			<mark>srclang="no" label"=Norwegian"&gt;</mark>
+			&lt;/video&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- src attribute -->	
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+			
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> srclang </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the language of the track text data (required if kind="subtitles"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;video width="320" height="240" controls&gt;
+			&lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+			&lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+			&lt;track src="subtitles_en.vtt" kind="subtitles"
+			<mark><b>srclang="en"</b> label"=English" default&gt;</mark>
+			&lt;track src="subtitles_no.vtt" kind="subtitles"
+			<mark><b>srclang="no"</b> label"=Norwegian"&gt;</mark>
+			&lt;/video&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>
