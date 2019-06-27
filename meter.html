@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Meter Tag  </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &ltmeter&gt </h2> 
+	</div>
+<!-- form attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> form </td>
+							<td style="font-size:25px; background-color:gray"> Specifies one or more forms the <code>meter</code> element belongs to. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php" method="get" id="form1"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			&lt;input type="submit" value"Submit"&gt;
+			&lt;/form&gt;
+			&lt;p&gt; Display a gauge: &lt;/p&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter <b>form="form1"</b> name="anna" min="0"</mark>
+			<mark> low="40" high="90" max="100" value="95"&gt;&lt;/meter&gt;&lt;/p&gt;</mark>
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The form attribute of meter does not 
+			work in any of the major browsers. &lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- high attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> high </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the range that is considered to be a high value. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php" method="get" id="form1"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			&lt;input type="submit" value"Submit"&gt;
+			&lt;/form&gt;
+			&lt;p&gt; Display a gauge: &lt;/p&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter form="form1" name="anna" min="0"</mark>
+			<mark> low="40" <b>high="90"</b> max="100" value="95"&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- low attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> low </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the range that is considered to be a low value. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			<mark>&lt;meta http-equiv="refresh" content="30"&gt;</mark>
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php" method="get" id="form1"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			&lt;input type="submit" value"Submit"&gt;
+			&lt;/form&gt;
+			&lt;p&gt; Display a gauge: &lt;/p&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter form="form1" name="anna" min="0"</mark>
+			<mark> <b>low="40"</b> high="90" max="100" value="95"&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;	
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- max attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> max </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the maximum value of the range. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter form="form1" name="anna" min="0"</mark>
+			<mark> low="40" high="90" <b>max="100"</b> value="95"&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- min attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> min </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the minimum value of the range. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter form="form1" name="anna" <b>min="0"</b></mark>
+			<mark> low="40" high="90" max="100" value="95"&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- optimum attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> optimum </td>
+							<td style="font-size:25px; background-color:gray"> Specifies what value is the optimal value for the gauge. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;p&gt; Display a gauge: &lt;/p&gt;
+			<mark>&lt;p&gt;&lt;meter value="0.3" high="0.9" low="0.1" <b>optimum="0.5"</b>&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- value attribute -->
+				<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> value </td>
+							<td style="font-size:25px; background-color:gray"> Required. Specifies the current value of the gauge. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;p&gt; Anna's Score: &lt;meter form="form1" name="anna" min="0"</mark>
+			<mark> low="40" high="90" max="100" <b>value="95"</b>&gt;&lt;/meter&gt;&lt;/p&gt;</mark>	
+			&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The <code>meter<code> tag is not supported in Internet Explorer, Edge 12,
+			Safari 5 and earlier versions. &lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>

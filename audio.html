@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Audio Tag </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &ltaudio&gt </h2> 
+	</div>
+<!-- autoplay attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> autoplay </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the audio will start playing as soon as it is ready. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio controls autoplay&gt;</mark><br>
+			<mark>&lt;source src="horse.ogg" type="audio/ogg"&gt;</mark><br>
+			<mark>&lt;source src="horse.mp3" type="audio/mpeg"&gt;</mark><br>
+			<mark>&lt;/audio&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- controls attribute -->	
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> controls </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that audio controls should be displayed (such as a play/pause button etc). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio controls&gt;</mark><br>
+			<mark>&lt;source src="horse.ogg" type="audio/ogg"&gt;</mark><br>
+			<mark>&lt;source src="horse.mp3" type="audio/mpeg"&gt;</mark><br>
+			<mark>&lt;/audio&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- loop attribute -->
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> loop </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the audio will start over again, every time it is finished. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio controls loop&gt;</mark><br>
+			<mark>&lt;source src="horse.ogg" type="audio/ogg"&gt;</mark><br>
+			<mark>&lt;source src="horse.mp3" type="audio/mpeg"&gt;</mark><br>
+			<mark>&lt;/audio&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- muted attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> muted </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the audio output should be muted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio controls muted&gt;</mark><br>
+			<mark>&lt;source src="horse.ogg" type="audio/ogg"&gt;</mark><br>
+			<mark>&lt;source src="horse.mp3" type="audio/mpeg"&gt;</mark><br>
+			<mark>&lt;/audio&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- preload attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> preload </td>
+							<td style="font-size:25px; background-color:gray"> Specifies if and how the author thinks the audio should be loaded when the page loads. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio controls preload="none"&gt;</mark><br>
+			<mark>&lt;source src="horse.ogg" type="audio/ogg"&gt;</mark><br>
+			<mark>&lt;source src="horse.mp3" type="audio/mpeg"&gt;</mark><br>
+			<mark>&lt;/audio&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- src attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> src </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the URL of the audio file. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;audio src="horse.ogg" controls&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>		
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>	

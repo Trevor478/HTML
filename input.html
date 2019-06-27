@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Input Tag </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &ltinput&gt </h2> 
+	</div>
+<!-- accept attribute -->	
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> accept </td>
+							<td style="font-size:25px; background-color:gray"> 	Specifies a filter for what file types the user can pick from the file input dialog box (only for type="file"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>&lt;input type="file" name="pic" accept="image/*"&gt;</mark>
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- alt attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> alt </td>
+							<td style="font-size:25px; background-color:gray"> Specifies an alternate text for images (only for type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			<mark>&lt;input type="image" src="submit.gif alt="Submit" width="48" height="48"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- autocomplete attribute -->	
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> autocomplete </td>
+							<td style="font-size:25px; background-color:gray"> 	Specifies whether an <code>input</code> element should have autocomplete enabled </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" autocomplete="on"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;			
+			Email: &lt;input type="email" name="email" autocomplete="off"&gt;&lt;br&gt;
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- autofocus attribute -->
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> autofocus </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that an <code>input</code> element should automatically get focus when the page loads. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>First Name: &lt;input type="text" name="fname" autofocus&gt;&lt;br&gt;</mark>
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;	
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- checked attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> checked </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that an <code>input</code> element should be pre-selected when the page loads (for type="checkbox" or type="radio"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			&lt;input type="checkbox" name="vehicle" value="Bike"&gt; I have a bike &lt;br&gt;
+			<mark>&lt;input type="checkbox" name="vehicle" value="Car" checked&gt; I have a car &lt;br&gt;</mark>
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;	
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- dirname attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> dirname </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the text direction will be submitted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>First Name: &lt;input type="text" name="fname" dirname="fname.dir"&gt;</mark>
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- disabled attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> disabled </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that an <code>input</code> element should be disabled. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			<mark>Last Name: &lt;input type="text" name="lname" disabled&gt;&lt;br&gt;</mark>
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- form attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> form </td>
+							<td style="font-size:25px; background-color:gray"> Specifies one or more forms the <code>input</code> element belongs to. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			<mark>&lt;/form&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- formaction attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formaction </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the URL of the file that will process the input control when the form is submitted (for type="submit" and type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;&lt;br&gt;
+			<mark>&lt;input type="submit" formaction="/action_page2.php" value="Submit to another page"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- formenctype attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formenctype </td>
+							<td style="font-size:25px; background-color:gray"> Specifies how the form-data should be encoded when submitting it to the server (for type="submit" and type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page_binary.php" method="post"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			<mark>&lt;input type="submit" formenctype="multipart/form-data"</mark> 
+			<mark>value="Submit to Multipart/form-data"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- formmethod attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formmethod </td>
+							<td style="font-size:25px; background-color:gray"> Defines the HTTP method for sending data to the action URL (for type="submit" and type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php" method="get"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			<mark>&lt;input type="submit" formmethod="post" value="Submit using POST"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- formnovalidate attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formnovalidate </td>
+							<td style="font-size:25px; background-color:gray"> Defines that form elements should not be validated when submitted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;		
+			Email: &lt;input type="email" name="userid"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;&lt;br&gt;
+			<mark>&lt;input type="submit" formnovalidate="formnovalidate"</mark> 
+			<mark>value="Submit without validation"&gt;&lt;br&gt;</mark>			
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- formtarget attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formtarget </td>
+							<td style="font-size:25px; background-color:gray"> Defines that form elements should not be validated when submitted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit as normal"&gt;
+			<mark>&lt;input type="submit" formtarget="_blank" value="Submit to new window"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- height attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> height </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the height of an <code>input</code> element (only for type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			<mark>&lt;input type="image" src="img_submit.gif" alt="Submit" width="48" <b>height="48"</b>&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- list attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> list </td>
+							<td style="font-size:25px; background-color:gray"> Refers to a <code>datalist</code> element that contains pre-defined options for an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php" method="get"&gt;
+			<mark>&lt;input list="browsers"&gt;</mark>
+			&lt;datalist id"browsers"&gt;
+			&lt;option value="Internet Explorer"&gt;
+			&lt;option value="FireFox"&gt;
+			&lt;option value="Google Chrome"&gt;
+			&lt;option value="Opera"&gt;
+			&lt;option value="Safari"&gt;
+			&lt;/datalist&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- max attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> max </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the maximum value for an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			Enter a date before 1980-01-01:
+			<mark>&lt;input type="date" name="bday" max="1979-12-31"&gt;</mark>
+			&lt;input type="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- maxlength attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> maxlength </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the maximum number of characters allowed in an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Username: &lt;input type="text" name="usrname" maxlength="10"&gt;&lt;br&gt;</mark>
+			&lt;input type="Submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- min attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> min </td>
+							<td style="font-size:25px; background-color:gray"> Specifies a minimum value for an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			Enter a date after 2000-01-01:
+			<mark>&lt;input type="date" name="bday" max="2000-01-02"&gt;</mark>
+			&lt;input type="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- multiple attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> Multiple </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that a user can enter more than one value in an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Select images: &lt;input type="file" name="img" multiple&gt;</mark>
+			&lt;input type="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- name attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> name </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the name of an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Name: &lt;input type="text" name="fullname"&gt;&lt;br&gt;</mark>
+			<mark>Email: &lt;input type="text" name="email"&gt;&lt;br&gt;</mark>
+			&lt;input type="Submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- pattern attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> pattern </td>
+							<td style="font-size:25px; background-color:gray"> Specifies a regular expression that an <code>input</code> element's value is checked against. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Country Code: &lt;input type="text" name="country_code</mark>
+			<mark>pattern="&#91A-Za-Z&#93&#123 3 &#125" title="Three letter country code&gt;</mark>
+			&lt;input type="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- placeholder attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> placeholder </td>
+							<td style="font-size:25px; background-color:gray"> Specifies a short hint that describes the expected value of an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>&lt;input type="text" name="fname" placeholder="First Name"&gt;&lt;br&gt;</mark>
+			<mark>&lt;input type="text" name="lname" placeholder="Last Name"&gt;&lt;br&gt;</mark>
+			&lt;input type="Submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- readonly attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> readonly </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that an input field is read-only. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Country: &lt;input type="text" name="country" value="Norway" readonly&gt;&lt;br&gt;</mark>
+			&lt;input type="Submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- required attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> required </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that an input field must be filled out before submitting the form. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Username: &lt;input type="text" name="usrname" required&gt;</mark>
+			&lt;input type="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- size attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> size </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the width, in characters, of an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Email: &lt;input type="text" name="email" size="35"&gt;&lt;br&gt;</mark>
+			<mark>PIN: &lt;input type="text" name="pin" maxlength="4" size="4"&gt;&lt;br&gt;</mark>
+			&lt;input type="Submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- src attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> src </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the URL of the image to use as a submit button (only for type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			<mark>&lt;input type="img" src="submit.gif" alt="Submit"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- step attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> step </td>
+							<td style="font-size:25px; background-color:gray"> 	Specifies the legal number intervals for an input field. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>&lt;input type="number" name="points" step="3"&gt;</mark>
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- type attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> type </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the type <code>input</code> element to display. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>Username: &lt;input type="text" name="usrname"&gt;&lt;br&gt;</mark>
+			<mark>&lt;input type="submit" value="Submit"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- value attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> value </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the value of an <code>input</code> element. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			<mark>First Name: &lt;input type="text" name="fname" value="John"&gt;&lt;br&gt;</mark>
+			<mark>Last Name: &lt;input type="text" name="lname" value="Doe"&gt;&lt;br&gt;</mark>
+			<mark>&lt;input type="submit" value="Submit Form"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- width attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> width </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the width of an <code>input</code> element (only for type="image"). </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;form action="/action_page.php"&gt;
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			<mark>&lt;input type="img" src="img_submit.gif" alt="Submit" <b>width="48"</b> height="48"&gt;</mark>
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>		
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>	

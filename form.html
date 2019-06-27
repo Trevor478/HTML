@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Form Tag </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &ltform&gt </h2> 
+	</div>
+<!-- accept-charset attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> accept-charset </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the character encodings that are to be used for the form submission. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" accept-charset=ISO-8859-1"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- action attribute -->	
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> action </td>
+							<td style="font-size:25px; background-color:gray"> Specifies where to send the form-data when a form is submitted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php"&gt;</mark>
+			First Name: &lt;input type="text" name="fname" value="Mickey"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname" value="Mouse"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- autocomplete attribute -->
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> autocomplete </td>
+							<td style="font-size:25px; background-color:gray"> Specifies whether a form should have autocomplete on or off. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" method="get" autocomplete="on"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Email: &lt;input type="email" name="email"&gt;&lt;br&gt;
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- enctype attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> enctype </td>
+							<td style="font-size:25px; background-color:gray"> Specifies how the form-data should be encoded when submitting it to the server (only for method="post") </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" method="post" enctype="multipart/form-data"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- method attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> method </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the HTTP method to use when sending form-data. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" method="get" target="_blank"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- name attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> name </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the name of a form. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form name="myForm" action="/action_page.php" method="get"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="button" onclick="formSubmit()" value="Send form data!"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- novalidate attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> novalidate </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the form should not be validated when submitted. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" novalidate&gt;</mark>
+			Email: &lt;input type="email" name="user_email"&gt;&lt;br&gt;
+			&lt;input type="submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- target attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> target </td>
+							<td style="font-size:25px; background-color:gray"> Specifies where to display the response that is received after submitting the form. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form action="/action_page.php" method="get" target="_blank"&gt;</mark>
+			First Name: &lt;input type="text" name="fname"&gt;&lt;br&gt;
+			Last Name: &lt;input type="text" name="lname"&gt;&lt;br&gt;
+			&lt;input type="submit" value="Submit"&gt;
+			&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>		
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>	

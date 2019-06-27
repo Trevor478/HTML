@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Code Tag </title>
+			<style>
+				.box {
+				width:100%;
+				height:175px;
+				background-image: url();
+				background-size:cover;
+				text-align:center;
+				font-family: Times new roman;
+				letter-spacing: 55px;
+				}
+				
+				table, th, td {
+				border:0;
+				border-collapse:collapse;
+				}
+				
+				th, td {
+				padding:5px;
+				text-align:left;
+				}
+				
+				th {
+				background-color: orange;
+				text-align: center;
+				font-size: 40px;
+				}
+				
+				main {
+				padding: 25px;
+				background-image: url(1.jpg);
+				background-repeat: no-repeat;
+				background-size: 75% 1080px;
+				background-position: center top;
+				}
+				
+				tbody{
+				height:200px;
+				overflow-y:auto;
+				width: 75%;
+				}
+				
+				.table-fixed{
+				width: 75%;
+				}
+				
+				p {
+				margin-right:210px;
+				color:red;
+				}
+				
+				a:link {
+				color: orange;
+				}
+				
+				a:visited {
+				color: gray;
+				}
+				
+				a:hover {
+				color: darkorange;
+				}
+			</style>
+	</head>
+
+
+
+<main>
+	<div class="box" style="color:black;font-size:130px;padding:0px;"
+		<h2 align="center"> &lt!code&gt </h2> 
+	</div>
+<!-- em attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>
+
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> em </td>
+							<td style="font-size:25px; background-color:gray"> Renders as emphasized text. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;p&gt;This is an example of &lt;em&gt;<em> emphasized </em>&lt;/em&gt; text. </mark>					
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- disabled attribute -->	
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> disabled </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that a button should be disabled. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="button" disabled&gt; Click Me &lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- form attribute -->
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> form </td>
+							<td style="font-size:25px; background-color:gray"> Specifies one or more forms the button belongs to. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit" form="nameform" value="Submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- formaction attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formaction </td>
+							<td style="font-size:25px; background-color:gray"> 	Specifies where to send the form-data when a form is submitted. Only for type="submit" </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" formaction="/action_page.php"&gt; Submit to another page.</mark>
+			<mark>&lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- formenctype attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formenctype </td>
+							<td style="font-size:25px; background-color:gray"> Specifies how form-data should be encoded before sending it to a server. Only for type="submit" </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit"&gt; Submit with character encoding. &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" formenctype="text/plain"&gt; Submit without character encoding. </mark>
+			<mark>&lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- formmethod attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formmethod </td>
+							<td style="font-size:25px; background-color:gray"> Specifies how to send the form-data (which HTTP GET or POST method to use). Only for type="submit" </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" formmethod="post"&gt; Submit using POST. </mark>
+			<mark>&lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- formnovalidate attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formnovalidate </td>
+							<td style="font-size:25px; background-color:gray"> Specifies that the form-data should not be validated on submission. Only for type="submit" </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" formnovalidate&gt; Submit without validation. </mark>
+			<mark>&lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>
+<!-- formtarget attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> formtarget </td>
+							<td style="font-size:25px; background-color:gray"> Specifies where to display the response after submitting the form. Only for type="submit" </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>			
+			<mark>&lt;button type="submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" formtarget="_blank"&gt; Submit to a new window. </mark>
+			<mark>&lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>			
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- name attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> name </td>
+							<td style="font-size:25px; background-color:gray"> Specifies a name for the button. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>
+			<mark>&lt;button name="subject" type="submit" value="HTML"&gt; HTML &lt;/button&gt;</mark>
+			<mark>&lt;button name="subject" type="submit" value="CSS"&gt; CSS &lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- type attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> type </td>
+							<td style="font-size:25px; background-color:gray"> Specifies the type of button. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>
+			<mark>&lt;button type="submit" value="Submit"&gt; Submit &lt;/button&gt;</mark>
+			<mark>&lt;button type="submit" value="Reset"&gt; Reset &lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>	
+<!-- value attribute -->		
+			<div>
+				<table align="center"; class="table table-fixed">
+					<tbody>		
+						<tr>
+							<th width="20%"> Attributes </th>
+							<th width="80%"> Description </th>
+						</tr>		
+						<tr>
+							<td style="text-align:center; font-size:35px; background-color:gray"> value </td>
+							<td style="font-size:25px; background-color:gray"> Specifies an initial value for the button. </td>
+						</tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		<pre style="font-size:30px;">
+			&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt; Title &lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			<mark>&lt;form&gt;</mark>
+			<mark>&lt;button name="subject" type="submit" value="fav_HTML"&gt; HTML &lt;/button&gt;</mark>
+			<mark>&lt;button name="subject" type="submit" value="fav_CSS"&gt; CSS &lt;/button&gt;</mark>
+			<mark>&lt;/form&gt;</mark>
+			&lt;/body&gt;
+			&lt;/html&gt;
+		</pre>			
+	<footer>
+	<h1 style="font-size:55px"; align="center"><a href="html.html"> BACK </a></h1>
+	<p align="right"><small> Definitions from https://www.w3schools.com  https://eastmanreference.com/ and https://html.com/ </small></p>
+	</footer>
+</main>
+</html>
